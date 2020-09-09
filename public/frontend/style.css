@@ -1,0 +1,48 @@
+ 
+
+
+
+ div.text-box{
+	padding-top: 400px;
+  padding-right: 30px;
+  padding-bottom: 400px;
+  padding-left: 80px;
+}
+
+
+/*.form-card {
+	position: relative;
+}*/
+
+.to-distination-tooltip{
+	position: absolute;
+	background: #fff;
+	top: -180px;
+	padding: 2rem;
+}
+
+.icon-main-nav {
+font-family: 'Niconne', cursive;
+
+	font-size: 20px;
+	
+	position: absolute;
+	top: -5px;
+	margin-left: -10px;
+
+
+	  transform: rotate(-10deg);
+  
+  color: #1d9099;
+}
+
+div #lock{
+
+	background-color: #706d6d;
+	text-align: center;
+}
+
+div #nolock{
+	background-color: #dadce0;
+	text-align: center;
+}

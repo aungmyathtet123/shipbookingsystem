@@ -1,0 +1,270 @@
+@extends('frontendtemplate')
+@section('content')
+
+<div class="container mt-5">
+	
+		
+		<div class="card p-3">
+			<div class="row mt-4">
+				
+					
+				<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+						{{-- <label class="form group">To</label> --}}
+
+					<div>
+						To<select class="chosen-select" tabindex="2" id="from" name="from">
+							<option value="{{$from->id}}">{{$from->name}}</option>
+
+							@foreach($cities as $city)
+
+								<option value="{{ $city->id }}">{{$city->name}}</option>
+							@endforeach	
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+						{{-- <label class="form group">From</label> --}}
+
+					<div>
+
+						From<select  class="chosen-select" tabindex="2" id="to">
+							<option value="{{ $to->id }}">{{$to->name}}</option>
+
+							@foreach($cities as $city)
+
+								<option value="{{ $city->id }}">{{$city->name}}</option>
+							@endforeach	
+						</select>
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+						{{-- <label class="form group">Department Date</label> --}}
+
+					<div class="form-group">
+						Department Date<input type="Date" name="date" class="form-control" id="date" style="width:13rem;"value="{{ $date }}" >
+					</div>
+				</div>
+				<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3 mt-4">
+					<div class="form-group">
+						<button class="btn btn-success edit">Edit</button>
+
+
+					</div>
+				</div>
+			
+			</div>
+		</div>
+	
+	</div>
+
+	<div class="container mt-5">
+		<div class="row">
+			<div class="col-sm-3 col-md-3 col-lg-3">
+
+				<div class="card">
+					
+					<div class="card-body">
+						<h5>choose Trip</h5>
+						<hr>
+						<div class="form-group">
+						<ul type="none">
+								
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample1">Option 1</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>
+								<label class="custom-control-label" for="defaultGroupExample2">Option 2</label>
+							</div>
+
+
+							
+						</ul>
+						</div>
+					</div>
+				</div>
+
+
+				<div class="card">
+					
+					<div class="card-body">
+						<h5>operator</h5>
+						<hr>
+						<div class="form-group">
+						<ul type="none">
+								
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample1">Option 1</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>
+								<label class="custom-control-label" for="defaultGroupExample2">Option 2</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample3">Option 3</label>
+							</div>
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample1">Option 1</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>
+								<label class="custom-control-label" for="defaultGroupExample2">Option 2</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample3">Option 3</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample1">Option 1</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>
+								<label class="custom-control-label" for="defaultGroupExample2">Option 2</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample3">Option 3</label>
+							</div>
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample1" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample1">Option 1</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample2" name="groupOfDefaultRadios" checked>
+								<label class="custom-control-label" for="defaultGroupExample2">Option 2</label>
+							</div>
+
+
+							<div class="custom-control custom-radio">
+								<input type="radio" class="custom-control-input" id="defaultGroupExample3" name="groupOfDefaultRadios">
+								<label class="custom-control-label" for="defaultGroupExample3">Option 3</label>
+							</div>
+						</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="col-sm-9 col-md-9 col-lg-9">
+								
+				 
+				@foreach($routes as $route) 
+
+				
+				<div class="card mt-3">
+
+					<div class="row p-5">
+						<div class="col-sm-5 col-md-5 col-lg-5 col-xl-5">
+							<div class="row">
+								<div class="col-sm-4 col-md-4 col-lg-4 col-xl-4">
+									<img src="#" class="card-img-top">
+								</div>
+								<div class="col-sm-8 col-md-8 col-lg-8 col-xl-8">
+									
+									<b>{{$route->time}}</b><br>
+									
+									
+
+									 {{$route->Ship->Operator->name}}<br>
+								<b class="text-danger">allow 1bag free</b>
+								</div>
+							</div>
+						</div>
+						<div class="col-sm-3 col-md-3 col-lg-3 col-xl-3">
+							<b>Trip City</b><br>
+							{{$from->name}}-{{ $to->name }}
+						</div>
+						<div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+							<b>{{ $route->lower_price }}(MMK)</b><br>
+							<div class="form-group">
+								
+								<a href="{{ route('seat',[$route->id, 'lower']) }}" class="btn btn-block btn-warning">Standard</a>
+							</div>
+						</div>
+						
+						<div class="col-sm-2 col-md-2 col-lg-2 col-xl-2">
+
+							<b>{{ $route->upper_price }}(MMK)</b><br>
+
+								<div class="form-group">
+								
+								<a href="{{ route('seat',[$route->id, 'upper']) }}" class="btn btn-block btn-warning">Upper</a>
+								
+							</div>
+						
+							
+							
+						</div>
+					</div>
+				</div>
+
+				
+				@endforeach
+				
+				
+			</div>
+			
+		</div>
+	</div>
+@endsection
+@section('script')
+<script type="text/javascript">
+
+	
+	$(document).ready(function () {
+
+
+	
+		 
+    
+   $.ajaxSetup({
+        headers: { 
+        	'X-CSRF-Token' : $('meta[name=_token]').attr('content')
+        	 }
+    });
+		  
+
+
+		
+
+		$(".edit").on('click',function(){
+
+
+
+			
+        var from=$('#from').val();
+        var to=$('#to').val();
+		var date=$('#date').val();
+
+		$.post("{{ route('research') }}",{from:from,to:to,date:date},function (res) {
+						console.log(res);
+					})
+
+
+
+			
+	})
+	})
+</script>
+@endsection
